@@ -1,5 +1,4 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+api__question:
+    path:       /api/stackoverflow/questions/{tagged}
+    controller: App\Controller\QuestionController::question
+    methods:    GET
