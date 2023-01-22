@@ -22,3 +22,25 @@ o Fromdate: Filtro opcional.
 2) Tiempo máximo de entrega 7 días, desde la recepción de la misma.
 3) Todos los candidatos que hayan presentado la prueba técnica recibirán un feedback de
 nuestro equipo IT, en agradecimiento al tiempo prestado.
+
+# Instalación
+
+Descargar y Levantar el contenedor de Docker
+`````
+make start
+`````
+
+Instalar las dependencias del proyecto 
+`````
+make composer-install
+`````
+
+Arrancar el proyecto symfony
+`````
+make run
+`````
+
+Acceder al local host con esta ruta
+`````
+127.0.0.1:1000/api/stackoverflow/questions/{tagged}
+`````
